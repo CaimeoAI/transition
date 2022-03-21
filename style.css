@@ -34,9 +34,34 @@
     width: 50%;
     animation: banana 1s ease-in forwards infinite alternate;
 }
-
+/*TODO Pausing animation when hovering */
 .container2:hover .item2 {
-    background-color: pink;
-    transform: translateX(100%);
+    animation-play-state: paused;
+}
+
+/*TODO Declaring frames for animation */
+@keyframes banana {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateY(100%);
+    }
+
+    40% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    60% {
+        transform: translateX(100%);
+    }
+
+    80% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
 }
 /*! Example Two END */
