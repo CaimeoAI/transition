@@ -32,6 +32,7 @@
     background-color: green;
     height: 50%;
     width: 50%;
+    /*TODO You can put this into the hover to play the animation when hovered */
     animation: banana 1s ease-in forwards infinite alternate;
 }
 /*TODO Pausing animation when hovering */
